@@ -33,6 +33,7 @@
         <COMPID name="Find message details" mc="Standard.UseCase" uid="c47462a7-eed8-4360-bb3e-6d52e066d07f"/>
         <COMPID name="Choose active user" mc="Standard.UseCase" uid="dc48b351-8783-487f-bcf7-985cb8b0a1f4"/>
         <COMPID name="Reduce window" mc="Standard.UseCase" uid="3866fbf2-5eb5-4c60-81a4-5c3bc754de30"/>
+        <COMPID name="Réseau" mc="Standard.Class" uid="4641477f-dcd5-4efb-9d3f-b1da6b23331c"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Diagramme de classe projetcoo" mc="Standard.ClassDiagram" uid="3c0e4b67-9e4d-4787-823f-9101cc828b0e"/>
