@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ProjetCOO_modelio" version="4">
+  <OBJECT>
+    <ID name="ProjetCOO_modelio" mc="Standard.Project" uid="10e77070-8b6c-4cf4-827d-f7c47c260d29"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[ProjetCOO_modelio]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="projetcoo_modelio" mc="Standard.Package" uid="c06c467c-ba89-4c6d-8f23-d79679351e96"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="ProjetCOO_modelio" mc="Infrastructure.DiagramSet" uid="8fa285cc-9d18-41dd-bc90-fc28a9e3c36f"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
