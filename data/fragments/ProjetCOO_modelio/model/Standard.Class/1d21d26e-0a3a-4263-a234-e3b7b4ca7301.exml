@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="history" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Data Base Manager" version="4">
   <OBJECT>
-    <ID name="history" mc="Standard.Class" uid="1d21d26e-0a3a-4263-a234-e3b7b4ca7301"/>
+    <ID name="Data Base Manager" mc="Standard.Class" uid="1d21d26e-0a3a-4263-a234-e3b7b4ca7301"/>
     <PID name="projetcoo_modelio" mc="Standard.Package" uid="c06c467c-ba89-4c6d-8f23-d79679351e96"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[history]]></ATT>
+      <ATT name="Name"><![CDATA[Data Base Manager]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -91,7 +91,7 @@
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="getHistory(User1, User2)" mc="Standard.Signal" uid="af07efec-5b4e-45ca-a0a7-c9189b5c9727"/>
-        <COMPID name="Class" mc="Standard.Class" uid="a4804088-0775-4760-9935-77b28eb354e2"/>
+        <COMPID name="addMessages(Liste,M,User1,User2)" mc="Standard.Class" uid="a4804088-0775-4760-9935-77b28eb354e2"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
