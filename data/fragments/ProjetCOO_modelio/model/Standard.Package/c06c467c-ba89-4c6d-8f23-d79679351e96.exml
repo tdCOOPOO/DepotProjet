@@ -24,7 +24,7 @@
         <COMPID name="user" mc="Standard.Class" uid="0f17b3a6-a925-4ef8-ba8e-4ec57b46d6d4"/>
         <COMPID name="DisplayManager" mc="Standard.Class" uid="7c8068d9-ad77-4198-a0e6-5f0a2f029db8"/>
         <COMPID name="Window" mc="Standard.Class" uid="7f9dc8bb-9ee5-46e6-bd59-8eaa1ef428da"/>
-        <COMPID name="history" mc="Standard.Class" uid="1d21d26e-0a3a-4263-a234-e3b7b4ca7301"/>
+        <COMPID name="Data Base Manager" mc="Standard.Class" uid="1d21d26e-0a3a-4263-a234-e3b7b4ca7301"/>
         <COMPID name="Thread_Manager" mc="Standard.Class" uid="0297af6b-3a8b-402d-852a-3d7c64bcb72d"/>
         <COMPID name="Notification_Manager" mc="Standard.Class" uid="9e4b1b78-1672-4aa8-8201-af35f6d237b8"/>
         <COMPID name="Message" mc="Standard.Class" uid="8d8441b9-d9c8-4580-b869-27265762acf7"/>
@@ -36,7 +36,12 @@
         <COMPID name="Find message details" mc="Standard.UseCase" uid="c47462a7-eed8-4360-bb3e-6d52e066d07f"/>
         <COMPID name="Choose active user" mc="Standard.UseCase" uid="dc48b351-8783-487f-bcf7-985cb8b0a1f4"/>
         <COMPID name="Reduce window" mc="Standard.UseCase" uid="3866fbf2-5eb5-4c60-81a4-5c3bc754de30"/>
-        <COMPID name="Réseau" mc="Standard.Class" uid="4641477f-dcd5-4efb-9d3f-b1da6b23331c"/>
+        <COMPID name="Network Manager" mc="Standard.Class" uid="4641477f-dcd5-4efb-9d3f-b1da6b23331c"/>
+        <COMPID name="AuthentificationWindow" mc="Standard.Class" uid="89231596-8c60-4ce6-8367-127aa2f33f1a"/>
+        <COMPID name="StartWindow" mc="Standard.Class" uid="70869478-d8cb-4cfc-84af-be53d5a96bb5"/>
+        <COMPID name="ConversationWindow" mc="Standard.Class" uid="3cba865b-0651-4adb-8d1e-a1d01cc889f3"/>
+        <COMPID name="ActiveUsersWindow" mc="Standard.Class" uid="d7aa44c4-51c5-4831-9ee0-53be889e17ac"/>
+        <COMPID name="Conversation" mc="Standard.Class" uid="231c1db3-2bc0-4d1f-8eb5-241915eb37bf"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Diagramme de classe projetcoo" mc="Standard.ClassDiagram" uid="3c0e4b67-9e4d-4787-823f-9101cc828b0e"/>

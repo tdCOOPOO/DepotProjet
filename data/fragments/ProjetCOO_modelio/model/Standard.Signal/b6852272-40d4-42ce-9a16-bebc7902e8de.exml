@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="PseudoValide(pseudo)" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="UserExist(login)" version="4">
   <OBJECT>
-    <ID name="PseudoValide(pseudo)" mc="Standard.Signal" uid="d857bf04-c40a-452e-ad4b-4204709cc61f"/>
+    <ID name="UserExist(login)" mc="Standard.Signal" uid="b6852272-40d4-42ce-9a16-bebc7902e8de"/>
     <PID name="user" mc="Standard.Class" uid="0f17b3a6-a925-4ef8-ba8e-4ec57b46d6d4"/>
     <ATTRIBUTES>
       <ATT name="IsEvent">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[PseudoValide(pseudo)]]></ATT>
+      <ATT name="Name"><![CDATA[UserExist(login)]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES></DEPENDENCIES>
