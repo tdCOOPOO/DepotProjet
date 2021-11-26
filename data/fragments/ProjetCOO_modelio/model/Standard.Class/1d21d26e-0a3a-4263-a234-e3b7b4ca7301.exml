@@ -91,7 +91,11 @@
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="getHistory(User1, User2)" mc="Standard.Signal" uid="af07efec-5b4e-45ca-a0a7-c9189b5c9727"/>
+<<<<<<< HEAD
         <COMPID name="Class" mc="Standard.Class" uid="a4804088-0775-4760-9935-77b28eb354e2"/>
+=======
+        <COMPID name="addMessages(Liste,M,User1,User2)" mc="Standard.Class" uid="a4804088-0775-4760-9935-77b28eb354e2"/>
+>>>>>>> parent of 1844115 (Diagramme de classe Sprint 1)
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

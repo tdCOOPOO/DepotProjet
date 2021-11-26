@@ -337,6 +337,7 @@
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
+<<<<<<< HEAD
         <OBJECT>
           <ID name="notification_Manager" mc="Standard.AssociationEnd" uid="a48abd03-513c-4e46-9030-b7d1b51dfb66"/>
           <ATTRIBUTES>
@@ -398,6 +399,8 @@
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
+=======
+>>>>>>> parent of 1844115 (Diagramme de classe Sprint 1)
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="setPseudo" mc="Standard.Signal" uid="4b3b0e53-50a0-49af-8d23-7f247e07019c"/>
