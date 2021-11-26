@@ -115,7 +115,7 @@
       </COMP>
       <COMP relation="OwnedEnd">
         <OBJECT>
-          <ID name="history" mc="Standard.AssociationEnd" uid="8f756e52-8c36-453a-9cd8-7eadf1490008"/>
+          <ID name="databasemanager" mc="Standard.AssociationEnd" uid="8f756e52-8c36-453a-9cd8-7eadf1490008"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -128,12 +128,12 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[history]]></ATT>
+            <ATT name="Name"><![CDATA[databasemanager]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="history" mc="Standard.Class" uid="1d21d26e-0a3a-4263-a234-e3b7b4ca7301"/>
+              <ID name="Data Base Manager" mc="Standard.Class" uid="1d21d26e-0a3a-4263-a234-e3b7b4ca7301"/>
             </LINK>
             <COMP relation="Opposite">
               <OBJECT>
@@ -155,7 +155,7 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="history" mc="Standard.AssociationEnd" uid="8f756e52-8c36-453a-9cd8-7eadf1490008"/>
+                    <COMPID name="databasemanager" mc="Standard.AssociationEnd" uid="8f756e52-8c36-453a-9cd8-7eadf1490008"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
@@ -255,7 +255,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="Réseau" mc="Standard.Class" uid="4641477f-dcd5-4efb-9d3f-b1da6b23331c"/>
+              <ID name="Network Manager" mc="Standard.Class" uid="4641477f-dcd5-4efb-9d3f-b1da6b23331c"/>
             </LINK>
             <COMP relation="Opposite">
               <OBJECT>

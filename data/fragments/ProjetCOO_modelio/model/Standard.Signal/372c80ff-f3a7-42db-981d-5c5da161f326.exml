@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="getPseudo" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="OpenAuthentificationWindow" version="4">
   <OBJECT>
-    <ID name="getPseudo" mc="Standard.Signal" uid="5b3d3cc1-c4b7-47d1-ac78-6a75a5a149aa"/>
-    <PID name="user" mc="Standard.Class" uid="0f17b3a6-a925-4ef8-ba8e-4ec57b46d6d4"/>
+    <ID name="OpenAuthentificationWindow" mc="Standard.Signal" uid="372c80ff-f3a7-42db-981d-5c5da161f326"/>
+    <PID name="AuthentificationWindow" mc="Standard.Class" uid="89231596-8c60-4ce6-8367-127aa2f33f1a"/>
     <ATTRIBUTES>
       <ATT name="IsEvent">false</ATT>
       <ATT name="IsException">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[getPseudo]]></ATT>
+      <ATT name="Name"><![CDATA[OpenAuthentificationWindow]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES></DEPENDENCIES>

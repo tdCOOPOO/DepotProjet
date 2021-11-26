@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Create login" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Edit login" version="4">
   <OBJECT>
-    <ID name="Create login" mc="Standard.UseCase" uid="fea8a0e5-0f45-49d8-a4f6-c701322360ce"/>
+    <ID name="Edit login" mc="Standard.UseCase" uid="fea8a0e5-0f45-49d8-a4f6-c701322360ce"/>
     <PID name="projetcoo_modelio" mc="Standard.Package" uid="c06c467c-ba89-4c6d-8f23-d79679351e96"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
@@ -9,10 +9,27 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Create login]]></ATT>
+      <ATT name="Name"><![CDATA[Edit login]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="Used">
+        <OBJECT>
+          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="496c3b4f-3575-4954-b327-cd07d2921eb6"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[UseCaseDependency]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="Valid login" mc="Standard.UseCase" uid="78e28ff3-afd7-454f-bc3d-03ca8a55658f"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="include" mc="Infrastructure.Stereotype" uid="00000000-0000-9c49-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
           <ID name="" mc="Infrastructure.Note" uid="b130bf7e-a070-42c5-9d59-e49297af2395"/>

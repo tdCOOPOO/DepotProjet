@@ -159,7 +159,6 @@
         <COMPID name="getActiveMembers" mc="Standard.Signal" uid="1b00ad30-70a3-428d-bc95-b9c715fbc135"/>
         <COMPID name="startChat" mc="Standard.Signal" uid="84d82dd0-d6c9-458e-88cf-7b9a2c8bf508"/>
         <COMPID name="sendMessage" mc="Standard.Signal" uid="1cafc28e-7e45-470c-b00b-9ebe8373f3a1"/>
-        <COMPID name="displayHistory" mc="Standard.Signal" uid="7343cd2d-561c-4e73-aa43-0f42d00996b7"/>
         <COMPID name="OpenChatInterface" mc="Standard.Signal" uid="5d008de3-c63a-4ae3-9af8-43fb48989399"/>
       </COMP>
       <COMP relation="Descriptor">
