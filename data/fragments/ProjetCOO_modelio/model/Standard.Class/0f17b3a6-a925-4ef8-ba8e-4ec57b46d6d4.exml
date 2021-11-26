@@ -338,6 +338,7 @@
           </DEPENDENCIES>
         </OBJECT>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <OBJECT>
           <ID name="notification_Manager" mc="Standard.AssociationEnd" uid="a48abd03-513c-4e46-9030-b7d1b51dfb66"/>
           <ATTRIBUTES>
@@ -399,6 +400,8 @@
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
+=======
+>>>>>>> parent of 1844115 (Diagramme de classe Sprint 1)
 =======
 >>>>>>> parent of 1844115 (Diagramme de classe Sprint 1)
       </COMP>
