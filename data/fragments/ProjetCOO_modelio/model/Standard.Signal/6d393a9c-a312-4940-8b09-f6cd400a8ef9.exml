@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ModifyPseudo(user,pseudo)" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="setPseudo(login)" version="4">
   <OBJECT>
-    <ID name="ModifyPseudo(user,pseudo)" mc="Standard.Signal" uid="1b7be638-f7c9-4ce9-b188-92a7a996cf2b"/>
-    <PID name="Data Base Manager" mc="Standard.Class" uid="1d21d26e-0a3a-4263-a234-e3b7b4ca7301"/>
+    <ID name="setPseudo(login)" mc="Standard.Signal" uid="6d393a9c-a312-4940-8b09-f6cd400a8ef9"/>
+    <PID name="keyboard" mc="Standard.Class" uid="d5e35797-fb56-4ec2-b303-0edae08ab055"/>
     <ATTRIBUTES>
       <ATT name="IsEvent">false</ATT>
       <ATT name="IsException">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[ModifyPseudo(user,pseudo)]]></ATT>
+      <ATT name="Name"><![CDATA[setPseudo(login)]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES></DEPENDENCIES>

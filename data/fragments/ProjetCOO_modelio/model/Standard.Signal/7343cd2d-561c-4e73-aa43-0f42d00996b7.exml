@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="UserExist(login)" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="displayHistory" version="4">
   <OBJECT>
-    <ID name="UserExist(login)" mc="Standard.Signal" uid="b6852272-40d4-42ce-9a16-bebc7902e8de"/>
-    <PID name="user" mc="Standard.Class" uid="0f17b3a6-a925-4ef8-ba8e-4ec57b46d6d4"/>
+    <ID name="displayHistory" mc="Standard.Signal" uid="7343cd2d-561c-4e73-aa43-0f42d00996b7"/>
+    <PID name="DisplayManager" mc="Standard.Class" uid="7c8068d9-ad77-4198-a0e6-5f0a2f029db8"/>
     <ATTRIBUTES>
       <ATT name="IsEvent">false</ATT>
       <ATT name="IsException">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[UserExist(login)]]></ATT>
+      <ATT name="Name"><![CDATA[displayHistory]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES></DEPENDENCIES>
