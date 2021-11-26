@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ConversationWindow" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="keyboard" version="4">
   <OBJECT>
-    <ID name="ConversationWindow" mc="Standard.Class" uid="3cba865b-0651-4adb-8d1e-a1d01cc889f3"/>
+    <ID name="keyboard" mc="Standard.Class" uid="d5e35797-fb56-4ec2-b303-0edae08ab055"/>
     <PID name="projetcoo_modelio" mc="Standard.Package" uid="c06c467c-ba89-4c6d-8f23-d79679351e96"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,9 +11,13 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[ConversationWindow]]></ATT>
+      <ATT name="Name"><![CDATA[keyboard]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
-    <DEPENDENCIES></DEPENDENCIES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="setPseudo(login)" mc="Standard.Signal" uid="6d393a9c-a312-4940-8b09-f6cd400a8ef9"/>
+      </COMP>
+    </DEPENDENCIES>
   </OBJECT>
 </EXT>
