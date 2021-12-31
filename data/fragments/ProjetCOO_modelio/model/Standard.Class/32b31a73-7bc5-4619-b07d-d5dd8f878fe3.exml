@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="WindowModel" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TCP_serveur" version="4">
   <OBJECT>
-    <ID name="WindowModel" mc="Standard.Class" uid="7f9dc8bb-9ee5-46e6-bd59-8eaa1ef428da"/>
+    <ID name="TCP_serveur" mc="Standard.Class" uid="32b31a73-7bc5-4619-b07d-d5dd8f878fe3"/>
     <PID name="projetcoo_modelio" mc="Standard.Package" uid="c06c467c-ba89-4c6d-8f23-d79679351e96"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,13 +11,13 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[WindowModel]]></ATT>
+      <ATT name="Name"><![CDATA[TCP_serveur]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedOperation">
         <OBJECT>
-          <ID name="ActiveUsers" mc="Standard.Operation" uid="232f8dd8-7829-4707-9ba0-3f153b613078"/>
+          <ID name="receive" mc="Standard.Operation" uid="4a6fab88-c29e-4357-9d64-eb4843e7ae02"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -25,7 +25,21 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[ActiveUsers]]></ATT>
+            <ATT name="Name"><![CDATA[receive]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="send" mc="Standard.Operation" uid="ded9cfd2-6230-4585-a97b-965cddce35bf"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[send]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
@@ -33,7 +47,7 @@
       </COMP>
       <COMP relation="OwnedAttribute">
         <OBJECT>
-          <ID name="user" mc="Standard.Attribute" uid="1abb4984-130a-47f0-a1b7-8f15674d6f86"/>
+          <ID name="os" mc="Standard.Attribute" uid="0a9dd056-7973-4719-9c85-e6bfad09846d"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -47,31 +61,7 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[user]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Type">
-              <ID name="user" mc="Standard.Class" uid="0f17b3a6-a925-4ef8-ba8e-4ec57b46d6d4"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="activeMembers" mc="Standard.Attribute" uid="4a5ddc72-baed-49b0-9f63-d9f0c94379bf"/>
-          <ATTRIBUTES>
-            <ATT name="TypeConstraint"></ATT>
-            <ATT name="Value"></ATT>
-            <ATT name="TargetIsClass">false</ATT>
-            <ATT name="Changeable">ReadWrite</ATT>
-            <ATT name="IsDerived">false</ATT>
-            <ATT name="IsOrdered">false</ATT>
-            <ATT name="IsUnique">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-            <ATT name="Visibility">Public</ATT>
-            <ATT name="IsClass">false</ATT>
-            <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[activeMembers]]></ATT>
+            <ATT name="Name"><![CDATA[os]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -80,19 +70,27 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
-      </COMP>
-      <COMP relation="Descriptor">
         <OBJECT>
-          <ID name="" mc="Infrastructure.Note" uid="a4b4e68f-3e26-47f2-85ae-cc57eb15f721"/>
+          <ID name="line" mc="Standard.Attribute" uid="e591df9d-aced-4d80-8d28-dacc45cee408"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[<Saisir le texte de la note ici>]]></ATT>
-            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
-            <ATT name="Name"></ATT>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[line]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <LINK relation="Model">
-              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

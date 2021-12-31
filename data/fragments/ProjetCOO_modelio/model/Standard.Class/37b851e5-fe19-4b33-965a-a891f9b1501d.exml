@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Network Manager" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="DbConnect" version="4">
   <OBJECT>
-    <ID name="Network Manager" mc="Standard.Class" uid="4641477f-dcd5-4efb-9d3f-b1da6b23331c"/>
+    <ID name="DbConnect" mc="Standard.Class" uid="37b851e5-fe19-4b33-965a-a891f9b1501d"/>
     <PID name="projetcoo_modelio" mc="Standard.Package" uid="c06c467c-ba89-4c6d-8f23-d79679351e96"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,13 +11,13 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Network Manager]]></ATT>
+      <ATT name="Name"><![CDATA[DbConnect]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedOperation">
         <OBJECT>
-          <ID name="TransmissionMsgs(M,Protocol)" mc="Standard.Operation" uid="dd61e322-b52d-4be0-b7fb-f84d688c9bae"/>
+          <ID name="Connexion" mc="Standard.Operation" uid="b414fdb9-8e22-46ba-9ad6-a2a160b4785b"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -25,7 +25,21 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[TransmissionMsgs(M,Protocol)]]></ATT>
+            <ATT name="Name"><![CDATA[Connexion]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="FinConnexion" mc="Standard.Operation" uid="dd984bae-b426-45f0-8bb9-37861ea17368"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[FinConnexion]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
@@ -33,7 +47,7 @@
       </COMP>
       <COMP relation="OwnedAttribute">
         <OBJECT>
-          <ID name="Protocol" mc="Standard.Attribute" uid="aeabe9fc-b6f2-4df3-ac30-73465dadc6df"/>
+          <ID name="connection" mc="Standard.Attribute" uid="49a2ada7-59d2-4746-bbef-e81b24efd0de"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -47,7 +61,31 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[Protocol]]></ATT>
+            <ATT name="Name"><![CDATA[connection]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="statement" mc="Standard.Attribute" uid="cf71633d-47ad-4ab8-b083-2fd96471e53c"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[statement]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -59,7 +97,7 @@
       </COMP>
       <COMP relation="OwnedEnd">
         <OBJECT>
-          <ID name="tCP_client" mc="Standard.AssociationEnd" uid="1a114cec-7a5e-4068-b821-d9551da7cedc"/>
+          <ID name="secondaryController" mc="Standard.AssociationEnd" uid="4f3bc6fc-5a71-40ec-a3db-17d19d82fb50"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -72,16 +110,16 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[tCP_client]]></ATT>
+            <ATT name="Name"><![CDATA[secondaryController]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="TCP_client" mc="Standard.Class" uid="36a4ad9f-2cbd-448d-bbc6-08be81a267ae"/>
+              <ID name="SecondaryController" mc="Standard.Class" uid="9d79a63b-65ec-4b29-bf8c-b45e8dbc3ad5"/>
             </LINK>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="751db3dc-792e-4253-a4bc-4df97324018a"/>
+                <ID name="" mc="Standard.AssociationEnd" uid="af71f59a-3416-4af8-aaf9-3362fad4179f"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -99,11 +137,11 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="tCP_client" mc="Standard.AssociationEnd" uid="1a114cec-7a5e-4068-b821-d9551da7cedc"/>
+                    <COMPID name="secondaryController" mc="Standard.AssociationEnd" uid="4f3bc6fc-5a71-40ec-a3db-17d19d82fb50"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="" mc="Standard.Association" uid="51fb1c4d-ee8b-47cd-bed5-0b2acba06daa"/>
+                      <ID name="" mc="Standard.Association" uid="c5996094-bdd6-4181-8423-eac36ac68058"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -115,75 +153,11 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="" mc="Standard.Association" uid="51fb1c4d-ee8b-47cd-bed5-0b2acba06daa"/>
-            </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="tCP_serveur" mc="Standard.AssociationEnd" uid="fc574f53-8621-4e28-97e5-8f939b36a85c"/>
-          <ATTRIBUTES>
-            <ATT name="Aggregation">KindIsAssociation</ATT>
-            <ATT name="IsChangeable">true</ATT>
-            <ATT name="Changeable">ReadWrite</ATT>
-            <ATT name="IsDerived">false</ATT>
-            <ATT name="IsOrdered">false</ATT>
-            <ATT name="IsUnique">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
-            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-            <ATT name="Visibility">Public</ATT>
-            <ATT name="IsClass">false</ATT>
-            <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[tCP_serveur]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Target">
-              <ID name="TCP_serveur" mc="Standard.Class" uid="32b31a73-7bc5-4619-b07d-d5dd8f878fe3"/>
-            </LINK>
-            <COMP relation="Opposite">
-              <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="e8793eff-5680-4d2a-a494-37ad78bb349e"/>
-                <ATTRIBUTES>
-                  <ATT name="Aggregation">KindIsAssociation</ATT>
-                  <ATT name="IsChangeable">true</ATT>
-                  <ATT name="Changeable">ReadWrite</ATT>
-                  <ATT name="IsDerived">false</ATT>
-                  <ATT name="IsOrdered">false</ATT>
-                  <ATT name="IsUnique">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="Visibility">Public</ATT>
-                  <ATT name="IsClass">false</ATT>
-                  <ATT name="IsAbstract">false</ATT>
-                  <ATT name="Name"></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <COMP relation="Opposite">
-                    <COMPID name="tCP_serveur" mc="Standard.AssociationEnd" uid="fc574f53-8621-4e28-97e5-8f939b36a85c"/>
-                  </COMP>
-                  <COMP relation="Association">
-                    <OBJECT>
-                      <ID name="" mc="Standard.Association" uid="a9c54445-d99b-44b1-ac7b-4a86478d70dd"/>
-                      <ATTRIBUTES>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES></DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-            <COMP relation="Association">
-              <COMPID name="" mc="Standard.Association" uid="a9c54445-d99b-44b1-ac7b-4a86478d70dd"/>
+              <COMPID name="" mc="Standard.Association" uid="c5996094-bdd6-4181-8423-eac36ac68058"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
-      <LINK relation="Extension">
-        <FOREIGNID name="PatternRoot" mc="Infrastructure.Stereotype" uid="ad46ab04-9310-11df-a4cf-0014224f9977"/>
-      </LINK>
     </DEPENDENCIES>
   </OBJECT>
 </EXT>

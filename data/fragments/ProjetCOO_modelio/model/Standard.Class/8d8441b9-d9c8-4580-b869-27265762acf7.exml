@@ -15,6 +15,50 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="displayMessage" mc="Standard.Operation" uid="e5a59367-bd2b-4e3d-b5f5-c01d3f4cf47f"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[displayMessage]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="getBytes" mc="Standard.Operation" uid="85bcbf75-b756-42dc-9081-61caa14cb16e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[getBytes]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="length" mc="Standard.Operation" uid="bc26f134-2082-47f3-9a4b-0e8c055e798e"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[length]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
       <COMP relation="OwnedAttribute">
         <OBJECT>
           <ID name="Emetteur" mc="Standard.Attribute" uid="5456081e-095c-4319-9d9d-5eefdc11099b"/>
@@ -36,7 +80,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Type">
-              <ID name="user" mc="Standard.Class" uid="0f17b3a6-a925-4ef8-ba8e-4ec57b46d6d4"/>
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -60,7 +104,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Type">
-              <ID name="user" mc="Standard.Class" uid="0f17b3a6-a925-4ef8-ba8e-4ec57b46d6d4"/>
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -133,7 +177,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="history" mc="Standard.Class" uid="1d21d26e-0a3a-4263-a234-e3b7b4ca7301"/>
+              <ID name="Data Base Manager" mc="Standard.Class" uid="1d21d26e-0a3a-4263-a234-e3b7b4ca7301"/>
             </LINK>
             <COMP relation="Opposite">
               <OBJECT>
@@ -255,7 +299,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="Réseau" mc="Standard.Class" uid="4641477f-dcd5-4efb-9d3f-b1da6b23331c"/>
+              <ID name="Network Manager" mc="Standard.Class" uid="4641477f-dcd5-4efb-9d3f-b1da6b23331c"/>
             </LINK>
             <COMP relation="Opposite">
               <OBJECT>
