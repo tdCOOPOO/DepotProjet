@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Start Chat" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Start Chat (bouton)" version="4">
   <OBJECT>
-    <ID name="Start Chat" mc="Standard.UseCase" uid="e3e69a1a-bf07-47cb-9ccf-3fc547d71dc8"/>
+    <ID name="Start Chat (bouton)" mc="Standard.UseCase" uid="e3e69a1a-bf07-47cb-9ccf-3fc547d71dc8"/>
     <PID name="projetcoo_modelio" mc="Standard.Package" uid="c06c467c-ba89-4c6d-8f23-d79679351e96"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
@@ -9,7 +9,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Start Chat]]></ATT>
+      <ATT name="Name"><![CDATA[Start Chat (bouton)]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -65,7 +65,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="Start Chat" mc="Standard.UseCase" uid="e3e69a1a-bf07-47cb-9ccf-3fc547d71dc8"/>
+              <ID name="Start Chat (bouton)" mc="Standard.UseCase" uid="e3e69a1a-bf07-47cb-9ccf-3fc547d71dc8"/>
             </LINK>
             <COMP relation="Opposite">
               <OBJECT>
